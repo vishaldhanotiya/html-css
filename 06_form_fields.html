@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Inputs</title>
+</head>
+
+<body>
+    <form action="process.php">
+        <div id="id-name">
+            <label for="name">Name</label><br>
+            <input placeholder="Enter Your Name" type="text" name="name" id="name">
+        </div>
+        <div id="id-email">
+            <label for="email">Email</label><br>
+            <input placeholder="Enter Your Email" type="email" name="email" id="email">
+        </div>
+        <div id="id-password">
+            <label for="password">Password</label><br>
+            <input placeholder="Enter Your Password" type="password" name="password" id="password">
+        </div>
+        <div id="id-address">
+            <label for="address">Address</label><br>
+            <textarea rows="5" cols="21" placeholder="Enter Your Address" type="text" name="address"
+                id="address"></textarea>
+        </div>
+        <div id="id-gender">
+            <label for="gender">Gender</label><br>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div id="id-age">
+            <label for="age">Age</label><br>
+            <input placeholder="Enter Your Age" type="number" name="age" id="age"></input>
+        </div>
+        <div id="id-birthdate">
+            <label for="birthdate">Birth Date</label><br>
+            <input placeholder="Enter Your Birth Date" type="date" name="birthdate" id="birthdate"></input>
+        </div>
+        <div id="id-membership">
+            <label for="membership">Membership</label><br>
+            <input type="radio" name="membership" value="Simple" id="membership">Simple</input>
+            <input type="radio" name="membership" value="Standard" id="membership">Standard</input>
+            <input type="radio" name="membership" value="Super" id="membership">Super</input>
+        </div>
+        <div id="id-checkbox">
+            <label for="checkbox">I Like</label><br>
+            <input type="checkbox" name="checkbox" value="bike" id="checkbox">Bike</input>
+            <input type="checkbox" name="checkbox" value="car" id="checkbox">Car</input>
+            <input type="radio" name="checkbox" value="boat" id="checkbox">Boat</input>
+        </div>
+
+        <input type="submit" value="Submit"></input>
+        <button type=submit>Submit</button>
+        <button type=reset>Reset</button>
+    </form>
+</body>
+
+</html>

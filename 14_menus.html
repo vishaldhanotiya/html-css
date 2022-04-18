@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus Styling</title>
+    <style>
+        .side-menu {
+            background-color: blue;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            border-radius: 10px;
+        }
+
+        .side-menu li {
+            float: left;
+            padding: 10px;
+        }
+
+        .side-menu li a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .side-menu li a:hover {
+            background-color: #406190;
+        }
+
+        #navbar {
+            list-style: none;
+            border: 1px #ddd solid;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: ghostwhite;
+        }
+
+
+        #navbar li a {
+            display: block;
+            padding-top: 10px;
+            text-decoration: none;
+        }
+
+        #navbar li {
+            border-bottom: dotted 1px #ddd;
+        }
+
+        #navbar li:last-child {
+            border: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="navbar">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Career</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    <ul class="side-menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Career</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</body>
+
+</html>

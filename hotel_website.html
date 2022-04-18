@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main Styling */
+        html,
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7em;
+        }
+
+        #container {
+            background-color: #333;
+        }
+
+        #navbar {
+            color: white;
+            height: 48px;
+            margin: auto;
+            max-width: 990px;
+            overflow: auto;
+        }
+
+        h1 {
+            padding-top: 10px;
+            float: left;
+        }
+
+        #navbar-ul {
+            list-style: none;
+            float: right;
+        }
+
+        #navbar-ul li {
+            float: left;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            background-color: #f7c08a;
+        }
+
+        #navbar ul li a:active {
+            color: #f7c08a;
+        }
+
+        .current {
+            color: #f7c08a;
+            background: #222;
+        }
+
+        #showcase {
+            height: 400px;
+            background: url('./images/showcase.jpg') no-repeat center center/cover;
+        }
+
+        #text-container {
+            text-align: center;
+            margin: auto;
+            padding-top: 100px;
+            color: #fff;
+        }
+
+        #text-content {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+
+        #about {
+            font-size: 15px;
+            padding: 8px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        span {
+            color: #f7c08a;
+        }
+
+        #left-section {
+            float: left;
+            height: 300px;
+            width: 50%;
+            background: url('./images/photo-1.jpg') no-repeat center center/cover;
+        }
+
+        #right-section {
+            float: right;
+            width: 50%;
+            background-color: #333;
+            padding-top: 80px;
+            text-align: center;
+            height: 300px;
+        }
+
+        #history-text {
+            font-size: 25px;
+            color: #fff;
+        }
+
+        #right-content {
+            font-size: 15px;
+            color: #fff;
+            padding: 15px 0px 10px 10px;
+            line-height: 2;
+        }
+
+        #location {
+            width: 50px;
+            height: 50px;
+        }
+
+        #left-box {
+            float: left;
+            text-align: center;
+        }
+
+        #box-container {
+            float: left;
+            width: 33.33%;
+            padding-top: 50px;
+
+            text-align: center;
+        }
+
+        #mid-box-container {
+            float: left;
+            padding: 50px;
+            padding-bottom: 80px;
+            background-color: #f7c08a;
+            width: 33.33%;
+            text-align: center;
+        }
+
+        #read-more {
+            font-size: 15px;
+            padding: 8px;
+            width: 50px;
+            text-align: center;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        #footer-main {
+            background-color: #333;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        #clr {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="navbar">
+            <h1>HBT</h1>
+            <ul id="navbar-ul">
+                <li><a class="current" href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="showcase">
+        <div id="text-container">
+            <h2><span>Enjoy</span> Your Stay</h2>
+            <p id="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, iusto! Debitis unde
+                quidem aspernatur
+                similique vero nobis quod, delectus quos?</p>
+
+            <p id="text-content"><a id="about" href="./01_basic_layout.html">About Our Hotel</a></p>
+        </div>
+
+    </div>
+
+    <div>
+        <div id="left-section">
+            <div id="left-container">
+
+            </div>
+
+        </div>
+        <div id="right-section">
+            <div id="right-container">
+                <h2 id="history-text"><span>The History</span> of Our Hotel</h2>
+                <p id="right-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iusto fugiat
+                    tempora deleniti quae eveniet mollitia sunt inventore possimus quaerat?</p>
+
+                <p id="text-content"><a id="read-more" href="./01_basic_layout.html">Read More</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="clr"></div>
+    <div id="left-box">
+        <div id="box-container">
+            <img id="location" src="./images/hotel.png" alt="">
+            <h3>Great Location</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, repudiandae.</p>
+
+        </div>
+        <div id="mid-box-container">
+            <img id="location" src="./images/restaurant.png" alt="">
+            <h3>Free Meals</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, repudiandae.</p>
+
+        </div>
+        <div id="box-container">
+            <img id="location" src="./images/dumbbell.png" alt="">
+            <h3>Fitness Room</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, repudiandae.</p>
+        </div>
+    </div>
+
+    </div>
+    <div id="clr"></div>
+
+    <div id="footer-main">
+        <p>Hotel BT &copy; 2019, All Rights Reserved</p>
+
+    </div>
+</body>
+
+</html>
